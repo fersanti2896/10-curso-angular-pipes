@@ -13,7 +13,8 @@ import { VentasModule } from './ventas/ventas.module';
   imports: [
     BrowserModule,
     AppRouterModule,
-    SharedModule
+    SharedModule, 
+    VentasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
