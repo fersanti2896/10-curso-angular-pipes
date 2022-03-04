@@ -14,8 +14,15 @@
         </p-card>
     </div>
     <div class="col-4">
-        <p-card header="" subheader="">
-            
+        <p-card header="Ventas Netas" subheader="Del año 2021">
+            {{ (ventasBrutas - 14200000) | currency:'USD':'symbol-narrow':'1.0-4'}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="Impuesto IVA" subheader="Del año 2021">
+            {{ (ventasBrutas * tasaIVA) | currency:'USD':'symbol-narrow':'1.0-4'}}
+            a una tasa del: 
+                {{ tasaIVA | percent:'2.2-2' }}
         </p-card>
     </div>
 </div>
