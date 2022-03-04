@@ -42,6 +42,13 @@
                 <li>Fecha | date: 'longDate'</li>
                 <li>Fecha Personalizada | date: 'EEEE d MMMM YYYY'</li>
             </ul>
+
+            <hr>
+            <ul>
+                <li>Fecha | date: 'long': 'GMT-6'</li>
+                <li>Fecha | date: 'long': 'GMT-4'</li>
+                <li>Fecha | date: 'long': '': ''</li>
+            </ul>
         </p-card>
     </div>
     <div class="col-6">
@@ -53,6 +60,13 @@
                 <li>{{ fecha | date: 'long' }}</li>
                 <li>{{ fecha | date: 'longDate' }}</li>
                 <li>{{ fecha | date: 'EEEE d MMMM YYYY' }}</li>
+            </ul>
+
+            <hr>
+            <ul>
+                <li>{{ fecha | date: 'long': 'GMT-6' }}</li>
+                <li>{{ fecha | date: 'long': 'GMT-4' }}</li>
+                <li>{{ fecha | date: 'long': 'GMT+1': 'fr' }}</li>
             </ul>
         </p-card>
     </div>
